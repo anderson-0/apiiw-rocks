@@ -2,6 +2,9 @@ const express = require('express');
 const { default: axios } = require('axios');
 const app = require('express')();
 
+// configure dotenv
+require('dotenv').config();
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
